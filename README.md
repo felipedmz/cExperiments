@@ -1,4 +1,4 @@
 cExperiments
 ============
 
-Experimentos com estruturas de dados em C
+Experimentos com estruturas de dados em C/C++
