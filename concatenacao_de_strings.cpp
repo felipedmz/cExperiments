@@ -1,6 +1,3 @@
-/* Programa que concatena strings digitadas pelo usuário */
-
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -21,12 +18,12 @@ int main(){
     comprimento = tamanho1 + tamanho2;
     
     char concatenada[comprimento];
-    for(int i=0;st1[i]!='\0';i++){//para inverter
-    concatenada[i]=st1[i];              
+    for(int i=0;st1[i]!='\0';i++){
+        concatenada[i]=st1[i];              
     }
-    for(int i=tamanho1;i<=comprimento;i++){//para inverter
-    concatenada[i]=st2[j];                 
-    j++;
+    for(int i=tamanho1;i<=comprimento;i++){
+        concatenada[i]=st2[j];                 
+        j++;
     }
     
     printf("\nA String1: %s  String2: %s String concatenada: %s\n\n",st1,st2,concatenada);

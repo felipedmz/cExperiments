@@ -1,5 +1,3 @@
-//Programa pra remover os espaços da string
-
 #include <stdio.h>
 #include <conio.h>
 #include <string.h>
@@ -9,7 +7,6 @@
 void RetiraBrancos(char* c);
 
 int main(){
-    
     char string[30];
     
     printf ("Digite uma sentença(maximo 30 letras): ");
@@ -24,17 +21,15 @@ int main(){
 }
 
 void RetiraBrancos(char* c){
-     int i = 0, j = 0;
-     char* final = (char*)malloc(sizeof(c));
+    int i = 0, j = 0;
+    char* final = (char*)malloc(sizeof(c));
      
-     while (j < strlen(c)) {
-         if (c[i] != ' ') {
+    while (j < strlen(c)) {
+        if (c[i] != ' ') {
             final[j] = c[i];
             j++;
-         }
-         i++;    
-     }
-
-     printf("\nA String sem espaços: %s", final);
+        }
+        i++;    
+    }
+    printf("\nA String sem espaços: %s", final);
 }
-    

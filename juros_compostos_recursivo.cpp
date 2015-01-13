@@ -1,15 +1,12 @@
-/* 
-  calculo de juros composto com funcao recursiva
-*/
 #include<stdio.h>
 #include<stdlib.h>
 
 float juros_comp_rec(float valor, int meses, float juros){
-      float resultado;
-      if (meses==0)
-         return 0;
-      resultado=valor+(juros*(valor/100));
-      return resultado+juros_comp_rec(valor,meses-1,juros);
+    float resultado;
+    if (meses==0)
+        return 0;
+    resultado=valor+(juros*(valor/100));
+    return resultado+juros_comp_rec(valor,meses-1,juros);
 }
 
 

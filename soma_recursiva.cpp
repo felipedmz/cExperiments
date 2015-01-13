@@ -1,16 +1,12 @@
-/*
-  Construir uma funcao recursiva em que sejam somados os valores compreencidos 
-  entre A e B
-*/
 #include<stdio.h>
 #include<stdlib.h>
 
 int soma_rec(int a, int b){
     int resultado=0;
     if(a==0)
-            return 0;
+        return 0;
     if(a==b)
-            return resultado=a+b;
+        return resultado=a+b;
     return resultado=a+soma_rec(a-1,b);
 }
 
